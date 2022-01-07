@@ -19,10 +19,14 @@ body {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+    padding-bottom: 22px;
   }
   
   .description{
     white-space: pre-wrap;
+    border-top: #d3d3d3 solid 3px;
+    border-bottom: #d3d3d3 solid 3px;
+    text-align: center;
   }
   
   .time-block{
@@ -68,4 +72,9 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  #currentDay {
+      font-size: 24px;
+      font-weight: bolder;
   }
