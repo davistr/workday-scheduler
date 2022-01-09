@@ -24,7 +24,6 @@ var changeBG = function () {
       }
     }
   }
-
 }
 changeBG();
 
@@ -51,10 +50,15 @@ var saveTasks = function () {
   var key = textArea.attr("id");
   var task = textArea.val();
   saveStorage(key, task);
-}
+};
 
 // event listener for the buttons of the class 
 $(".saveBtn").on("click", saveTasks);
+
 // load tasks from local storage
 loadStorage();
 
+// check every 15 minutes for timeblock background change
+setInterval(function () {
+  changeBG();
+}, 900000)
